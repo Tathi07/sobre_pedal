@@ -1,0 +1,798 @@
+*{	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: inherit;
+
+}
+
+
+
+body{
+	overflow-y: hidden;	
+	height: 100vh;
+	font-family: century gothic;
+
+
+}
+.quieto{
+	overflow-x: hidden;
+}
+h1{
+	font-size: 5.5rem !important;
+
+}
+
+::-webkit-scrollbar {
+    height: 5px;
+}
+ 
+::-webkit-scrollbar-thumb {
+   
+    background: #fc8000; 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: #fc8000; 
+}
+
+#grande{
+	width: 800%;
+	height: 788px;
+	display: flex;
+	position: relative;
+	background-image: url(../img/fondo.jpg);
+	
+}
+
+
+
+#portal{
+	width: 349px;
+	height:964.11px;
+	z-index: 6;
+	margin-left: 87%;
+	position: absolute;
+	display: none;
+	background: url(../img/portal.png);
+	animation: animPortal 1s steps(4) infinite running;
+
+}
+
+@keyframes animPortal{
+	100%{
+		background-position: -1382.16px;
+	}
+}
+
+
+
+
+#seccion1{
+	width: 12.5%;
+	height: 100vh;
+	float: left;
+	position: relative;
+}
+
+.inicio{
+	height: 100vh;
+	width: 800%;
+
+}
+
+.popUp{
+	position: relative;
+	z-index: 5;
+	width: 100%;
+	height: 100vh;
+	background: rgba(83,71,65,0.7);
+	padding: 81px 0px 0px 339px;
+}
+
+#avisoRA{	
+	display: none;
+	position: relative;
+	z-index: 6;
+	width: 103%;
+	height: 100vh;
+	background: rgba(83,71,65,0.7);
+	padding: 27px 0px 0px 339px;}
+
+
+.radky_pausa{
+	display: block;
+	width: 125px;
+	height: 300px;
+	background: url(../img/radky_quieto.png);
+	z-index: 5;
+	margin: 327px 0 0 300px; 
+	position: fixed;
+	padding: 0;
+
+
+}
+
+
+.radky{
+	display: none;
+	width: 125px;
+	height: 300px;
+	background: url(../img/sprites/radky.png);
+	z-index: 5;
+	margin: 327px 0 0 300px; 
+	position: fixed;
+	padding: 0;
+	animation: caminandoRadky 0.94s steps(9) infinite running;
+
+}
+
+.radky2{
+	display: none;
+	width: 125px;
+	height: 300px;
+	background: url(../img/sprites/radky2.png);
+	z-index: 5;
+	margin: 327px 0 0 300px; 
+	position: fixed;
+	padding: 0;
+	animation: caminandoRadkyi 0.94s steps(9) infinite running;
+	
+
+}
+
+@keyframes caminandoRadky{
+	100%{
+		background-position: -1199px top;
+	}
+
+}
+
+@keyframes caminandoRadkyi{
+	100%{
+		background-position: 1199px top;
+	}
+
+}
+
+.afiche{
+	width: 386px;
+	height: 262px;
+	cursor: pointer;
+	background-image: url(../img/afiche2.png);
+	position: absolute;
+	margin: 0 auto;
+
+}	
+
+.afiche:hover{
+	width: 386px;
+	height: 262px;
+	cursor: pointer;
+	margin: 0 auto;
+	background-image: url(../img/afiche.png);
+
+}
+
+
+
+.aficheGrande{
+	position: relative;
+	z-index: 5;
+	width: 100%;
+	height: 100vh;
+	display: none;
+
+}
+ 
+.aficheGrande img{
+	left: 160px;
+	margin: 0 auto;
+	padding-left: 8%;
+}
+
+.cerrar{
+	color: #fc8000;
+	font-size: 50px;
+	position: absolute;
+	z-index: 4;
+	right: 180px;
+	top: 10px;
+}
+
+.reloj{
+	width: 72px;
+	height: 72px;
+	cursor: pointer;
+	background-image: url(../img/reloj.png);
+	position: absolute;
+	margin: 438px 0 0 65% ;
+}	
+
+.reloj:hover{
+	width: 72px;
+	height: 72px;
+	cursor: pointer;
+	background-image: url(../img/reloj1.png);
+	position: absolute;
+	margin: 438px 0 0 65% ;
+
+}
+
+.CuadroTxt{
+	width: 250px;
+    height: 250px;
+	background: white;
+	border-radius: 10px;
+	padding: 10px;
+	text-align: center;
+	font-size: 12pt;
+    margin-left: 418px;
+    position: absolute;
+    display: none;
+    cursor: pointer;
+    box-shadow: 3px 0px 27px #998F8A;
+
+
+}
+
+.btnTxt{
+	 margin: 320px 47px 0px 425px;
+	 font-size: 50px;
+	 position: relative;
+	 color: #fc8000;
+	 cursor: pointer;
+	 filter: drop-shadow(0 0 10px rgba(105,98,94,0.7));
+}
+
+.b3{	
+	    margin: 0px 0px 0px 800px
+}
+
+.b5{	
+	    margin-left: 800px;
+}
+
+.b6{	
+	    margin-left: 1080px;
+}
+
+.b8{
+	margin-top: 17px;
+    margin-left: 800px;
+
+}
+
+.b10{	
+	    margin-left: 890px;
+}
+
+
+
+
+#seccion2{
+	width: 12.4%;
+	height: 100vh;
+	float: left;
+	position: relative;
+}
+
+.fecha{
+	font-size: 80px; 
+	color: white;
+	width: 12.5%;
+	height: 100vh;
+	position: absolute;
+	margin: 0 auto;
+	left: 40%;
+	display: none;
+
+
+}
+
+
+
+.siguiente{
+	 font-size: 30px;
+	 color: #fc8000;
+	 cursor: pointer;
+	 filter: drop-shadow(0 0 10px rgba(105,98,94,0.4));
+	 padding-top:20px; 
+	
+}
+
+.james{
+	margin: 332px 10px 10px 665px;
+	position: absolute;
+}
+
+.peter{
+	margin: 332px 10px 10px 1000px;
+	position: absolute;
+}
+
+.gunnar{
+	margin: 332px 10px 10px 801px;
+	position: absolute;
+	z-index: 2
+}
+
+.CuadroTxt2{
+	width: 210px;
+    height: 235px;
+	background: white;
+	border-radius: 10px;
+	padding: 10px;
+	text-align: center;
+	font-size: 12pt;
+    margin-left: 418px;
+    position: absolute;
+    display: none;
+    cursor: pointer;
+    box-shadow: 3px 0px 27px #998F8A;
+}
+
+.radkytxt2{
+    height: 250px !important; 
+
+}
+
+.petertxt2{
+	margin-left:1080px;
+}
+
+.jamesTxt{
+	margin-left: 800px;
+}
+
+.bengtxt{
+	height: 140px !important;
+	margin-left: 0 !important;
+	right: 360px !important;
+}
+
+.radkytxt3{
+	height: 120px !important;
+}
+
+.gunnartxt{
+	right: 250px;
+	margin-left: 0 !important;
+	height: 150px !important;
+}
+
+.radkytxt4{
+	height: 150px !important;
+}
+
+.motociclistaTxt{
+	right: 250px;
+	margin-left: 0 !important;
+	height: 185px !important;
+}
+
+
+#pequeñoGif{
+	width: 190px;
+	height: 120px;
+	display: none;
+	
+}
+
+
+#pequeñoGifBmx{
+	width: 190px;
+	height: 120px;
+	display: none;
+}
+
+.intervinculo:hover{
+	opacity: 0.8;
+}
+
+.intervinculo{
+	border-radius: 10px;
+    margin: 13px 0px 0px 40px;
+    padding: 4px;
+    background: #fc8000;
+    width: 110px;
+    height: 25px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+.intervinculo1{
+	border-radius: 10px;
+    margin: 13px 0px 0px 40px;
+    padding: 4px;
+    background: #fc8000;
+    width: 110px;
+    height: 25px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+.intervinculo1:hover{
+	opacity: 0.8;
+}
+
+.contenidoGif{
+	display: none;
+	position: relative;
+	z-index: 7;
+	width: 100%;
+	height: 100vh;
+	background: rgba(83,71,65,0.7);
+
+}
+
+.contenidoGif img{
+	    margin: 15px 40px 21px 200px;
+}
+
+
+.contenidoGifBmx{
+	display: none;
+	position: relative;
+	z-index: 5;
+	width: 100%;
+	height: 100vh;
+	background: rgba(83,71,65,0.7);
+
+}
+
+.contenidoGifBmx img{
+	    margin: 15px 40px 21px 200px;
+}
+
+
+#seccion3{
+	width: 12.4%;
+	height: 100vh;
+	float: left;
+	position: relative;
+}
+
+#seccion4{
+	width: 12.5%;
+	height: 100vh;
+	float: left;
+	position: relative;
+}
+
+#seccion5{
+	width: 12.5%;
+	height: 100vh;
+	float: left;
+	position: relative;
+}
+
+#seccion6{
+	width: 12.5%;
+	height: 100vh;
+	float: left;
+	position: relative;
+}
+
+.contenidoLibreria{
+	display: none;
+	position: relative;
+	z-index: 5;
+	width: 100%;
+	height: 100vh;
+	background: rgba(83,71,65,0.7);
+
+}
+
+
+
+.libreria{
+	cursor: pointer;
+	margin:200px 281px 0px 120px;
+	float: right;
+	background-repeat: no-repeat;
+	width: 25%;
+	height: 500px;
+	background-image: url(../img/libreria2.png);
+   
+}
+
+.libreria:hover{
+	cursor: pointer;
+	background-repeat: no-repeat;
+	width: 25%;
+	height: 500vh;
+	background-image: url(../img/libreria.png);
+}
+
+.periodico_lightbox{
+	margin: 0 auto;
+	display: none;
+}
+
+#seccion5{
+	width: 12.4%;
+	height: 100vh;
+	float: left;
+	position: relative;
+}
+
+.tonelli{
+	margin: 332px 10px 10px 665px;
+    position: absolute;
+}
+
+.tonelliTxt{
+		margin-left: 803px;
+}
+
+.juego{
+	bottom: 438px;
+	display: none;
+	position: relative;
+	z-index: 5;
+	width: 100%;
+	height: 100vh;
+	padding: 13px 0px 0px 181px;
+	background: rgba(83,71,65,0.7);
+}
+
+.juego img{
+	position: relative;
+
+	
+}
+
+.biciRural{
+	padding: 400px 0 0 35%;
+	position: absolute;
+} 
+
+#seccion7{
+	width: 12.4%;
+	height: 100vh;
+	float: left;
+	position: relative;
+}
+
+.motociclista{
+	margin: 332px 10px 10px 801px;
+	position: absolute;
+}
+
+.b14{
+	
+    margin-left: 900px;
+ 
+}
+
+#final{
+	width: 12.4%;
+	height: 100vh;
+	float: left;
+	position: relative;
+}
+
+.logo{
+	width: 37%; 
+	margin: 274px 10px 10px 445px;
+	display: none;
+	position: absolute;
+	animation:animacionlogo 1s linear;
+}
+
+@keyframes animacionlogo {
+
+0%{
+	
+	margin-top: -250px;
+}
+
+100%{
+	margin-top: 5px;
+}
+
+}
+
+.gunnarSprites2{
+	display: none;
+	width: 118px;
+    height: 336px;
+    background: url(../img/sprites/GUNNAR_CAMINANDO2.png);
+    z-index: 5;
+    margin: 0px;
+    padding: 0;
+    margin: 301px 0px 0px 1400px;
+    position: absolute;
+    animation: caminandoGunnar2 1.2s steps(11) 1 running;}
+
+ @keyframes caminandoGunnar2{
+
+ 	0%{
+ 		background-position: 1700px;
+ 		margin-right: 1400px;
+ 		margin-left: -100px;
+ 	}
+
+	100%{
+		margin-right: 1400px;
+		background-position: -1700px;
+	}
+
+}
+
+.gunnarSprites{
+	display: none;
+	width: 118px;
+    height: 354px;
+    background: url(../img/sprites/GUNNAR_CAMINANDO.png);
+    z-index: 5;
+    margin: 0px;
+    padding: 0;
+    margin: 274px 10px 10px 665px;
+    position: absolute;
+    animation: caminandoGunnar 1.2s steps(12) 1 running;}
+
+ @keyframes caminandoGunnar{
+
+ 	0%{
+ 		margin-left: -100px;
+ 	}
+
+	100%{
+		margin-left: 427px;
+		background-position: -1700px;
+	}
+
+}
+
+/*.radkyEnfrente{
+	width: 125px;
+	height: 300px;
+	background: url(../img/radkyEnfrente.png);
+	z-index: 5;
+	margin: 327px 0 0 342px; 
+	padding: 0;
+}*/
+
+.tonelliSprites{
+	display: none;
+	width: 118px;
+    height: 354px;
+    background: url(../img/sprites/TONELLI_CAMINANDO.png);
+	margin: 274px 10px 10px 665px;
+    padding: 0;
+    position: absolute;
+    animation: caminandoTonelli 1.2s steps(12) 1 running;
+}
+
+ @keyframes caminandoTonelli{
+
+ 	0%{
+ 		margin-left: -100px;
+ 	}
+
+	100%{
+		margin-left: 527px;
+		background-position: -1700px;
+	}
+
+}
+
+
+.jamesSprites{
+	display: none;
+	width: 118px;
+    height: 354px;
+    background: url(../img/sprites/JAMES_CAMINANDO.png);
+    z-index: 5;
+    margin: 274px 10px 10px 665px;
+    position: absolute;
+    padding: 0;
+    animation: caminandoJames 1.2s steps(12) 1 running;
+}
+
+ @keyframes caminandoJames{
+
+ 	0%{
+ 		margin-left: -100px;
+ 	}
+
+	100%{
+		margin-left: 627px;
+		background-position: -1700px;
+	}
+
+}
+
+.camilloSprites{
+	display: none;
+	width: 122px;
+    height: 354px;
+    background: url(../img/sprites/Sprites_Camillo_Caminado.png);
+    z-index: 5;
+    margin: 0px;
+    position: absolute;
+	margin: 274px 10px 10px 665px;
+    padding: 0;
+    animation: caminandoCamillo 1.2s steps(12) 1 running;
+}
+
+ @keyframes caminandoCamillo{
+
+ 	0%{
+ 		margin-left: -100px;
+ 	}
+
+	100%{
+		margin-left: 727px;
+		background-position: -1700px;
+	}
+
+}
+
+.petterSprites{
+	display: none;
+	width: 122px;
+    height: 354px;
+    background: url(../img/sprites/Petter_caminado.png);
+    z-index: 5;
+    margin: 0px;
+    position: absolute;
+	margin: 274px 10px 10px 665px;
+    padding: 0;
+    animation: caminandoPetter 1.2s steps(12) 1 running;
+
+}
+
+.radkyEnfrente{
+	display: none;
+	width: 122px;
+    height: 300px;
+    background: url(../img/radkyEnfrente.png);
+    z-index: 5;
+    margin: 0px;
+    position: absolute;
+	margin: 328px 10px 10px 665px;
+    padding: 0;
+}
+
+ @keyframes caminandoPetter{
+ 	0%{
+ 		margin-left: -100px;
+ 	}
+
+	100%{
+		margin-left: 827px;
+		background-position: -1700px;
+	}
+
+}
+
+.scottSprite{
+
+	display: none;
+	width: 122px;
+    height: 354px;
+    background: url(../img/sprites/scott_caminado.png);
+    z-index: 5;
+    margin: 0px;
+    position: absolute;
+	margin: 274px 10px 10px 665px;
+    padding: 0;
+    animation: caminandoPetter 1.2s steps(12) 1 running;
+}
+
+ @keyframes caminandoPetter{
+ 	0%{
+ 		margin-left: -100px;
+ 	}
+
+	100%{
+		margin-left: 927px;
+		background-position: -1700px;
+	}
+
+}
+

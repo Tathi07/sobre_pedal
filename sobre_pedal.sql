@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 30-04-2019 a las 18:31:15
+-- Tiempo de generación: 04-05-2019 a las 20:58:39
 -- Versión del servidor: 10.1.38-MariaDB
 -- Versión de PHP: 7.3.2
 
@@ -63,7 +63,7 @@ CREATE TABLE `secciones` (
 --
 
 INSERT INTO `secciones` (`secciones_Sitio`, `fecha`, `foto`) VALUES
-('seccion2', 1868, 'img/gunnar.png'),
+('seccion2', 1868, 'img/james_pausa.png'),
 ('seccion3', 1895, 'img/beng.png'),
 ('seccion5', 1908, 'img/tonelli.png'),
 ('seccion6', 1921, 'img/gunnar.png'),
